@@ -1,0 +1,370 @@
+@charset "UTF-8";
+@import url(_fonts.scss);
+body {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  width: 100%;
+  max-width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  align-items: center;
+}
+
+.header_nav_menu {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.header_nav_menu .header_nav_menu_item {
+  font-family: "Lato";
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #282528;
+  text-transform: uppercase;
+}
+.header_nav_menu .header_nav_menu_item:hover {
+  color: #18B5DC;
+  cursor: pointer;
+}
+
+.header_logo {
+  width: 100%;
+  max-width: 175px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_logo .header_logo_img {
+  width: 62px;
+  height: 60px;
+}
+.header_logo .header_logo_title {
+  font-family: "Train One";
+  font-size: 30px;
+  line-height: 44px;
+  font-weight: 400;
+  color: #282528;
+  text-align: center;
+}
+
+.button_callback {
+  width: 130px;
+  height: 42px;
+  font-family: "Lato";
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #282528;
+  text-transform: uppercase;
+  background-color: #fff;
+}
+.button_callback:hover {
+  color: #fff;
+  background-color: #18B5DC;
+  border: hidden;
+}
+
+.main_section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 150px;
+  background-color: #F6F6F6;
+}
+
+.main_section_text {
+  width: 100%;
+  max-width: 1770px;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+}
+.main_section_text .main_section_title {
+  font-family: "Lato";
+  font-size: 34px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #282528;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.main_section_text .main_section_text_border {
+  width: 45px;
+  height: 3px;
+  border: 1px solid #DDDBDB;
+  margin: 0 auto;
+  background-color: #DDDBDB;
+  margin-bottom: 40px;
+}
+
+.main_section_descrip {
+  width: 100%;
+  max-width: 570px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.main_section_descrip .main_section_descrip_text {
+  font-family: "Lato";
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #3C3C3C;
+}
+
+.main_section_team {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.main_section_team_item {
+  margin-bottom: 150px;
+}
+.main_section_team_item .team_item_title {
+  font-family: "Lato";
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #282528;
+}
+.main_section_team_item .team_item_sub {
+  font-family: "Lato";
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300;
+  color: #646464;
+}
+
+.team_item_photo {
+  position: absolute;
+}
+
+.team_person_photo {
+  position: relative;
+  overflow: hidden;
+}
+
+.main_section_team_item:hover .team_item_photo {
+  bottom: -280px;
+}
+
+.team_item_back {
+  width: 270px;
+  height: 265px;
+  background-color: #18B5DC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.back_social_icon_block {
+  width: 100%;
+  max-width: 135px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+}
+
+.social_icon_border {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #5DCBE6;
+  background-color: #5DCBE6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social_icon_border:hover {
+  border: 1px solid #fff;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.social_icon_border:hover .back_icon-svg {
+  fill: #5DCBE6;
+}
+
+.footer {
+  width: 100%;
+  max-width: 1170px;
+  padding-top: 50px;
+  align-items: center;
+  margin-bottom: 300px;
+  margin: 0 auto;
+}
+.footer .footer_logo {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 175px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+.footer .footer_logo_img {
+  width: 62px;
+  height: 60px;
+}
+.footer .footer_logo_title {
+  font-family: "Train One";
+  font-size: 30px;
+  line-height: 44px;
+  font-weight: 400;
+  color: #282528;
+  text-align: center;
+}
+
+.footer_nav_menu {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+.footer_nav_menu .footer_nav_menu_item {
+  font-family: "Lato";
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #3C3C3C;
+  text-transform: uppercase;
+}
+.footer_nav_menu .footer_nav_menu_item:hover {
+  color: #18B5DC;
+  cursor: pointer;
+}
+
+.footer_social_icons {
+  width: 100%;
+  max-width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.social_icons_border {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #18B5DC;
+  background-color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+}
+.social_icons_border:hover {
+  background-color: #18B5DC;
+  cursor: pointer;
+}
+
+.icon-twitter::before {
+  content: "";
+  font-family: "fontello";
+  font-size: 20px;
+  color: #18B5DC;
+  display: inline-block;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}
+
+.icon-instagram::before {
+  content: "";
+  font-family: "fontello";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+  color: #18B5DC;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}
+
+.icon-telegram::before {
+  content: "";
+  font-family: "fontello";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+  color: #18B5DC;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}
+
+.icon-facebook::before {
+  content: "";
+  font-family: "fontello";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+  color: #18B5DC;
+  position: absolute;
+  top: 25%;
+  left: 35%;
+}
+
+.icon-linkedin::before {
+  content: "";
+  font-family: "fontello";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+  color: #18B5DC;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}
+
+.social_icons_border:hover .icon-twitter::before {
+  color: #fff;
+  cursor: pointer;
+}
+
+.social_icons_border:hover .icon-instagram::before {
+  color: #fff;
+  cursor: pointer;
+}
+
+.social_icons_border:hover .icon-telegram::before {
+  color: #fff;
+  cursor: pointer;
+}
+
+.social_icons_border:hover .icon-facebook::before {
+  color: #fff;
+  cursor: pointer;
+}
+
+.social_icons_border:hover .icon-linkedin::before {
+  color: #fff;
+  cursor: pointer;
+}

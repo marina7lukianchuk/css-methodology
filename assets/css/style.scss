@@ -1,0 +1,393 @@
+@import url(_fonts.scss);
+
+$sup-text-color: #898F8F;
+$text-color-lorem: #333333;
+$title-color: #666666;
+$gold-color: #FFCC00;
+
+@mixin text_style ($f-f, $f-s, $l-h, $f-w, $coloring) {
+    font-family: $f-f;
+    font-size: $f-s;
+    line-height: $l-h;
+    font-weight: $f-w;
+    color: $coloring;
+}
+
+body {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+.header_nav_menu {
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    .header_nav_menu_item {
+        @include text_style('Lato', 20px, 24px, 600, #282528);
+        text-transform: uppercase;
+
+        &:hover {
+            color: #18B5DC;
+            cursor: pointer;
+        }
+
+    }
+}
+
+
+.header_logo {
+    width: 100%;
+    max-width: 175px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header_logo_img {
+        width: 62px;
+        height: 60px;
+    }
+
+    .header_logo_title {
+        @include text_style('Train One', 30px, 44px, 400, #282528);
+        text-align: center;
+    }
+}
+
+.button_callback {
+    width: 130px;
+    height: 42px;
+    @include text_style('Lato', 18px, 22px, 600, #282528);
+    text-transform: uppercase;
+    background-color: #fff;
+
+    &:hover {
+        color: #fff;
+        background-color: #18B5DC;
+        border: hidden;
+
+    }
+}
+
+.main_section {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 150px;
+    background-color: #F6F6F6;
+}
+
+.main_section_text {
+    width: 100%;
+    max-width: 1770px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+
+    .main_section_title {
+        @include text_style('Lato', 34px, 40px, 700, #282528);
+        text-transform: uppercase;
+        margin-bottom: 20px;
+
+    }
+
+    .main_section_text_border {
+        width: 45px;
+        height: 3px;
+        border: 1px solid #DDDBDB;
+        margin: 0 auto;
+        background-color: #DDDBDB;
+        margin-bottom: 40px;
+    }
+}
+
+
+.main_section_descrip {
+    width: 100%;
+    max-width: 570px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+
+    .main_section_descrip_text {
+        @include text_style('Lato', 16px, 24px, 300, #3C3C3C);
+    }
+}
+
+.main_section_team {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.main_section_team_item {
+    margin-bottom: 150px;
+
+    .team_item_title {
+        @include text_style('Lato', 18px, 22px, 700, #282528);
+    }
+
+    .team_item_sub {
+        @include text_style('Lato', 18px, 22px, 300, #646464);
+    }
+
+}
+
+.team_item_photo {
+    position: absolute;
+}
+
+.team_person_photo {
+    position: relative;
+    overflow: hidden;
+}
+
+.main_section_team_item:hover .team_item_photo {
+    bottom: -280px;
+}
+
+
+.team_item_back {
+    width: 270px;
+    height: 265px;
+    background-color: #18B5DC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+
+.back_social_icon_block {
+    width: 100%;
+    max-width: 135px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+
+}
+
+.social_icon_border {
+    width: 42px;
+    height: 42px;
+    border: 1px solid #5DCBE6;
+    background-color: #5DCBE6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        border: 1px solid #fff;
+        background-color: #fff;
+        cursor: pointer;
+    }
+}
+
+
+
+.social_icon_border:hover .back_icon-svg {
+    fill: #5DCBE6;
+}
+
+
+.footer {
+    width: 100%;
+    max-width: 1170px;
+    padding-top: 50px;
+    align-items: center;
+    margin-bottom: 300px;
+    margin: 0 auto;
+
+    .footer_logo {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 175px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 35px;
+
+    }
+
+    .footer_logo_img {
+        width: 62px;
+        height: 60px;
+    }
+
+    .footer_logo_title {
+        @include text_style('Train One', 30px, 44px, 400, #282528);
+        text-align: center;
+    }
+}
+
+.footer_nav_menu {
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+
+    .footer_nav_menu_item {
+        @include text_style('Lato', 18px, 22px, 600, #3C3C3C);
+        text-transform: uppercase;
+
+        &:hover {
+            color: #18B5DC;
+            cursor: pointer;
+        }
+
+    }
+}
+
+.footer_social_icons {
+    width: 100%;
+    max-width: 250px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.social_icons_border {
+    width: 42px;
+    height: 42px;
+    border: 1px solid #18B5DC;
+    background-color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+
+    &:hover {
+        background-color: #18B5DC;
+        cursor: pointer;
+
+    }
+}
+
+.icon-twitter {
+    &::before {
+        content: '\e800';
+        font-family: "fontello";
+        font-size: 20px;
+        color: #18B5DC;
+        display: inline-block;
+        position: absolute;
+        top: 25%;
+        left: 25%;
+    }
+}
+
+.icon-instagram {
+    &::before {
+        content: '\f16d';
+        font-family: "fontello";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: normal;
+        color: #18B5DC;
+        position: absolute;
+        top: 25%;
+        left: 25%;
+    }
+}
+
+.icon-telegram {
+    &::before {
+        content: '\f2c6';
+        font-family: "fontello";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: normal;
+        color: #18B5DC;
+        position: absolute;
+        top: 25%;
+        left: 25%;
+    }
+}
+
+.icon-facebook {
+    &::before {
+        content: '\f30c';
+        font-family: "fontello";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: normal;
+        color: #18B5DC;
+        position: absolute;
+        top: 25%;
+        left: 35%;
+    }
+
+}
+
+.icon-linkedin {
+    &::before {
+        content: '\f318';
+        font-family: "fontello";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: normal;
+        color: #18B5DC;
+        position: absolute;
+        top: 25%;
+        left: 25%;
+    }
+}
+
+
+
+.social_icons_border:hover .icon-twitter::before {
+    color: #fff;
+    cursor: pointer;
+}
+
+.social_icons_border:hover .icon-instagram::before {
+    color: #fff;
+    cursor: pointer;
+}
+
+.social_icons_border:hover .icon-telegram::before {
+    color: #fff;
+    cursor: pointer;
+}
+
+.social_icons_border:hover .icon-facebook::before {
+    color: #fff;
+    cursor: pointer;
+}
+
+.social_icons_border:hover .icon-linkedin::before {
+    color: #fff;
+    cursor: pointer;
+}
